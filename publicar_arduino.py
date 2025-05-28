@@ -2,13 +2,12 @@ import serial
 import time
 import requests
 
-# --- CONFIGURAÇÕES ---
 UBIDOTS_TOKEN = "BBUS-wVBo0DsI7Ir0XGXlRHDVb4FheZvzRr"
 DEVICE_LABEL = "arduino_turbidez"
 VARIABLE_LABEL = "turbidez"
-SERIAL_PORT = "COM6"  # Altere conforme a porta do seu Arduino
-BAUD_RATE = 9600      # Mesmo baud do Arduino
-# ----------------------
+SERIAL_PORT = "COM6"  
+BAUD_RATE = 9600      
+
 
 def send_to_ubidots(value):
     url = f"https://industrial.api.ubidots.com/api/v1.6/devices/{DEVICE_LABEL}"

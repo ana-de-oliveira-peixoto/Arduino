@@ -8,7 +8,7 @@ double calc_NTU(double volt) {
 }
 
 void setup() {
-  Serial.begin(9600); // Comunicação serial
+  Serial.begin(9600); 
   pinMode(LED_VERDE, OUTPUT);
   pinMode(LED_VERMELHO, OUTPUT);
 }
